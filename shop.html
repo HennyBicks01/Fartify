@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stink Shop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        #shopHeader {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            cursor: move;
+            user-select: none;
+        }
+        #fartList {
+            list-style-type: none;
+            padding: 0;
+        }
+        .fart-item {
+            background-color: white;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        button:disabled {
+            background-color: #cccccc;
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+<body>
+    <div id="shopHeader">Stink Shop</div>
+    <div id="stats"></div>
+    <ul id="fartList"></ul>
+    <script src="shop.js"></script>
+</body>
+</html>

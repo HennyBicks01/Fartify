@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "name": "Fart Idle Game",
+    "version": "1.0",
+    "description": "An idle game where you collect farts and unlock new ones!",
+    "permissions": [
+      "activeTab",
+      "scripting",
+      "storage",
+      "contextMenus"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_icon": "icon.png"
+    },
+    "web_accessible_resources": [{
+      "resources": ["trimmed_farts/*.mp3"],
+      "matches": ["<all_urls>"]
+    }],
+    "content_security_policy": {
+      "extension_pages": "script-src 'self'; object-src 'self'"
+    }
+  }
